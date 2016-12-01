@@ -14,6 +14,8 @@
 		2EBD73C61DEFBD1B00F42FFE /* ClonechatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBD73C51DEFBD1B00F42FFE /* ClonechatTests.swift */; };
 		2EBD73D11DEFBD1B00F42FFE /* ClonechatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBD73D01DEFBD1B00F42FFE /* ClonechatUITests.swift */; };
 		A8C484BB1DEFBFD2001F0566 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C484BA1DEFBFD2001F0566 /* RegisterViewController.swift */; };
+		A8C484C31DEFD857001F0566 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C484C21DEFD857001F0566 /* Networking.swift */; };
+		A8C484C51DEFD895001F0566 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C484C41DEFD895001F0566 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		2EBD73D01DEFBD1B00F42FFE /* ClonechatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClonechatUITests.swift; sourceTree = "<group>"; };
 		2EBD73D21DEFBD1B00F42FFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8C484BA1DEFBFD2001F0566 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		A8C484C21DEFD857001F0566 /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		A8C484C41DEFD895001F0566 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +101,14 @@
 		2EBD73AB1DEFBD1B00F42FFE /* Clonechat */ = {
 			isa = PBXGroup;
 			children = (
+				A8C484C21DEFD857001F0566 /* Networking.swift */,
 				2EBD73AC1DEFBD1B00F42FFE /* AppDelegate.swift */,
 				2EBD73B41DEFBD1B00F42FFE /* Main.storyboard */,
 				2EBD73B71DEFBD1B00F42FFE /* Assets.xcassets */,
 				2EBD73B91DEFBD1B00F42FFE /* LaunchScreen.storyboard */,
 				2EBD73BC1DEFBD1B00F42FFE /* Info.plist */,
 				A8C484BA1DEFBFD2001F0566 /* RegisterViewController.swift */,
+				A8C484C41DEFD895001F0566 /* LoginViewController.swift */,
 			);
 			path = Clonechat;
 			sourceTree = "<group>";
@@ -259,6 +265,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8C484C51DEFD895001F0566 /* LoginViewController.swift in Sources */,
+				A8C484C31DEFD857001F0566 /* Networking.swift in Sources */,
 				2EBD73AD1DEFBD1B00F42FFE /* AppDelegate.swift in Sources */,
 				A8C484BB1DEFBFD2001F0566 /* RegisterViewController.swift in Sources */,
 			);
