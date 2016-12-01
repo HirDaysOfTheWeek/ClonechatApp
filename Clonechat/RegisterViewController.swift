@@ -38,10 +38,10 @@ class RegisterViewController: UIViewController {
             
             let status:String = response?["status"] as! String
             if status == "ok" {
-                print("registration successful")
+                self.performSegue(withIdentifier: "registrationSuccessful", sender: self)
             } else {
                 let message:String = response?["message"] as! String
-                print("error = \(message)")
+                
             }
         })
     }
