@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2EBD73AD1DEFBD1B00F42FFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBD73AC1DEFBD1B00F42FFE /* AppDelegate.swift */; };
+		2EBD73B61DEFBD1B00F42FFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EBD73B41DEFBD1B00F42FFE /* Main.storyboard */; };
+		2EBD73B81DEFBD1B00F42FFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EBD73B71DEFBD1B00F42FFE /* Assets.xcassets */; };
+		2EBD73BB1DEFBD1B00F42FFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EBD73B91DEFBD1B00F42FFE /* LaunchScreen.storyboard */; };
+		2EBD73C61DEFBD1B00F42FFE /* ClonechatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBD73C51DEFBD1B00F42FFE /* ClonechatTests.swift */; };
+		2EBD73D11DEFBD1B00F42FFE /* ClonechatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBD73D01DEFBD1B00F42FFE /* ClonechatUITests.swift */; };
+		A8C484BB1DEFBFD2001F0566 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C484BA1DEFBFD2001F0566 /* RegisterViewController.swift */; };
+		A8C484C31DEFD857001F0566 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C484C21DEFD857001F0566 /* Networking.swift */; };
+		A8C484C51DEFD895001F0566 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C484C41DEFD895001F0566 /* LoginViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2EBD73C21DEFBD1B00F42FFE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2EBD73A11DEFBD1B00F42FFE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2EBD73A81DEFBD1B00F42FFE;
+			remoteInfo = Clonechat;
+		};
+		2EBD73CD1DEFBD1B00F42FFE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2EBD73A11DEFBD1B00F42FFE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2EBD73A81DEFBD1B00F42FFE;
+			remoteInfo = Clonechat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2EBD73A91DEFBD1B00F42FFE /* Clonechat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clonechat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EBD73AC1DEFBD1B00F42FFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2EBD73B51DEFBD1B00F42FFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2EBD73B71DEFBD1B00F42FFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2EBD73BA1DEFBD1B00F42FFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2EBD73BC1DEFBD1B00F42FFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EBD73C11DEFBD1B00F42FFE /* ClonechatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClonechatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EBD73C51DEFBD1B00F42FFE /* ClonechatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClonechatTests.swift; sourceTree = "<group>"; };
+		2EBD73C71DEFBD1B00F42FFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EBD73CC1DEFBD1B00F42FFE /* ClonechatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClonechatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EBD73D01DEFBD1B00F42FFE /* ClonechatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClonechatUITests.swift; sourceTree = "<group>"; };
+		2EBD73D21DEFBD1B00F42FFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8C484BA1DEFBFD2001F0566 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		A8C484C21DEFD857001F0566 /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		A8C484C41DEFD895001F0566 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2EBD73A61DEFBD1B00F42FFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2EBD73BE1DEFBD1B00F42FFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2EBD73C91DEFBD1B00F42FFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2EBD73A01DEFBD1B00F42FFE = {
+			isa = PBXGroup;
+			children = (
+				2EBD73AB1DEFBD1B00F42FFE /* Clonechat */,
+				2EBD73C41DEFBD1B00F42FFE /* ClonechatTests */,
+				2EBD73CF1DEFBD1B00F42FFE /* ClonechatUITests */,
+				2EBD73AA1DEFBD1B00F42FFE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2EBD73AA1DEFBD1B00F42FFE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2EBD73A91DEFBD1B00F42FFE /* Clonechat.app */,
+				2EBD73C11DEFBD1B00F42FFE /* ClonechatTests.xctest */,
+				2EBD73CC1DEFBD1B00F42FFE /* ClonechatUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2EBD73AB1DEFBD1B00F42FFE /* Clonechat */ = {
+			isa = PBXGroup;
+			children = (
+				A8C484C21DEFD857001F0566 /* Networking.swift */,
+				2EBD73AC1DEFBD1B00F42FFE /* AppDelegate.swift */,
+				2EBD73B41DEFBD1B00F42FFE /* Main.storyboard */,
+				2EBD73B71DEFBD1B00F42FFE /* Assets.xcassets */,
+				2EBD73B91DEFBD1B00F42FFE /* LaunchScreen.storyboard */,
+				2EBD73BC1DEFBD1B00F42FFE /* Info.plist */,
+				A8C484BA1DEFBFD2001F0566 /* RegisterViewController.swift */,
+				A8C484C41DEFD895001F0566 /* LoginViewController.swift */,
+			);
+			path = Clonechat;
+			sourceTree = "<group>";
+		};
+		2EBD73C41DEFBD1B00F42FFE /* ClonechatTests */ = {
+			isa = PBXGroup;
+			children = (
+				2EBD73C51DEFBD1B00F42FFE /* ClonechatTests.swift */,
+				2EBD73C71DEFBD1B00F42FFE /* Info.plist */,
+			);
+			path = ClonechatTests;
+			sourceTree = "<group>";
+		};
+		2EBD73CF1DEFBD1B00F42FFE /* ClonechatUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2EBD73D01DEFBD1B00F42FFE /* ClonechatUITests.swift */,
+				2EBD73D21DEFBD1B00F42FFE /* Info.plist */,
+			);
+			path = ClonechatUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2EBD73A81DEFBD1B00F42FFE /* Clonechat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2EBD73D51DEFBD1B00F42FFE /* Build configuration list for PBXNativeTarget "Clonechat" */;
+			buildPhases = (
+				2EBD73A51DEFBD1B00F42FFE /* Sources */,
+				2EBD73A61DEFBD1B00F42FFE /* Frameworks */,
+				2EBD73A71DEFBD1B00F42FFE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Clonechat;
+			productName = Clonechat;
+			productReference = 2EBD73A91DEFBD1B00F42FFE /* Clonechat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2EBD73C01DEFBD1B00F42FFE /* ClonechatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2EBD73D81DEFBD1B00F42FFE /* Build configuration list for PBXNativeTarget "ClonechatTests" */;
+			buildPhases = (
+				2EBD73BD1DEFBD1B00F42FFE /* Sources */,
+				2EBD73BE1DEFBD1B00F42FFE /* Frameworks */,
+				2EBD73BF1DEFBD1B00F42FFE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2EBD73C31DEFBD1B00F42FFE /* PBXTargetDependency */,
+			);
+			name = ClonechatTests;
+			productName = ClonechatTests;
+			productReference = 2EBD73C11DEFBD1B00F42FFE /* ClonechatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2EBD73CB1DEFBD1B00F42FFE /* ClonechatUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2EBD73DB1DEFBD1B00F42FFE /* Build configuration list for PBXNativeTarget "ClonechatUITests" */;
+			buildPhases = (
+				2EBD73C81DEFBD1B00F42FFE /* Sources */,
+				2EBD73C91DEFBD1B00F42FFE /* Frameworks */,
+				2EBD73CA1DEFBD1B00F42FFE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2EBD73CE1DEFBD1B00F42FFE /* PBXTargetDependency */,
+			);
+			name = ClonechatUITests;
+			productName = ClonechatUITests;
+			productReference = 2EBD73CC1DEFBD1B00F42FFE /* ClonechatUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2EBD73A11DEFBD1B00F42FFE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = HirDaysOfTheWeek;
+				TargetAttributes = {
+					2EBD73A81DEFBD1B00F42FFE = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+					2EBD73C01DEFBD1B00F42FFE = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2EBD73A81DEFBD1B00F42FFE;
+					};
+					2EBD73CB1DEFBD1B00F42FFE = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2EBD73A81DEFBD1B00F42FFE;
+					};
+				};
+			};
+			buildConfigurationList = 2EBD73A41DEFBD1B00F42FFE /* Build configuration list for PBXProject "Clonechat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2EBD73A01DEFBD1B00F42FFE;
+			productRefGroup = 2EBD73AA1DEFBD1B00F42FFE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2EBD73A81DEFBD1B00F42FFE /* Clonechat */,
+				2EBD73C01DEFBD1B00F42FFE /* ClonechatTests */,
+				2EBD73CB1DEFBD1B00F42FFE /* ClonechatUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2EBD73A71DEFBD1B00F42FFE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EBD73BB1DEFBD1B00F42FFE /* LaunchScreen.storyboard in Resources */,
+				2EBD73B81DEFBD1B00F42FFE /* Assets.xcassets in Resources */,
+				2EBD73B61DEFBD1B00F42FFE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2EBD73BF1DEFBD1B00F42FFE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2EBD73CA1DEFBD1B00F42FFE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2EBD73A51DEFBD1B00F42FFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8C484C51DEFD895001F0566 /* LoginViewController.swift in Sources */,
+				A8C484C31DEFD857001F0566 /* Networking.swift in Sources */,
+				2EBD73AD1DEFBD1B00F42FFE /* AppDelegate.swift in Sources */,
+				A8C484BB1DEFBFD2001F0566 /* RegisterViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2EBD73BD1DEFBD1B00F42FFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EBD73C61DEFBD1B00F42FFE /* ClonechatTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2EBD73C81DEFBD1B00F42FFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EBD73D11DEFBD1B00F42FFE /* ClonechatUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2EBD73C31DEFBD1B00F42FFE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2EBD73A81DEFBD1B00F42FFE /* Clonechat */;
+			targetProxy = 2EBD73C21DEFBD1B00F42FFE /* PBXContainerItemProxy */;
+		};
+		2EBD73CE1DEFBD1B00F42FFE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2EBD73A81DEFBD1B00F42FFE /* Clonechat */;
+			targetProxy = 2EBD73CD1DEFBD1B00F42FFE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2EBD73B41DEFBD1B00F42FFE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2EBD73B51DEFBD1B00F42FFE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2EBD73B91DEFBD1B00F42FFE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2EBD73BA1DEFBD1B00F42FFE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2EBD73D31DEFBD1B00F42FFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2EBD73D41DEFBD1B00F42FFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2EBD73D61DEFBD1B00F42FFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Clonechat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hirdaysoftheweek.clonechat.Clonechat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		2EBD73D71DEFBD1B00F42FFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Clonechat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hirdaysoftheweek.clonechat.Clonechat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		2EBD73D91DEFBD1B00F42FFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ClonechatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hirdaysoftheweek.clonechat.ClonechatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Clonechat.app/Clonechat";
+			};
+			name = Debug;
+		};
+		2EBD73DA1DEFBD1B00F42FFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ClonechatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hirdaysoftheweek.clonechat.ClonechatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Clonechat.app/Clonechat";
+			};
+			name = Release;
+		};
+		2EBD73DC1DEFBD1B00F42FFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = ClonechatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hirdaysoftheweek.clonechat.ClonechatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Clonechat;
+			};
+			name = Debug;
+		};
+		2EBD73DD1DEFBD1B00F42FFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = ClonechatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hirdaysoftheweek.clonechat.ClonechatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Clonechat;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2EBD73A41DEFBD1B00F42FFE /* Build configuration list for PBXProject "Clonechat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EBD73D31DEFBD1B00F42FFE /* Debug */,
+				2EBD73D41DEFBD1B00F42FFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2EBD73D51DEFBD1B00F42FFE /* Build configuration list for PBXNativeTarget "Clonechat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EBD73D61DEFBD1B00F42FFE /* Debug */,
+				2EBD73D71DEFBD1B00F42FFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2EBD73D81DEFBD1B00F42FFE /* Build configuration list for PBXNativeTarget "ClonechatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EBD73D91DEFBD1B00F42FFE /* Debug */,
+				2EBD73DA1DEFBD1B00F42FFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2EBD73DB1DEFBD1B00F42FFE /* Build configuration list for PBXNativeTarget "ClonechatUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EBD73DC1DEFBD1B00F42FFE /* Debug */,
+				2EBD73DD1DEFBD1B00F42FFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2EBD73A11DEFBD1B00F42FFE /* Project object */;
+}

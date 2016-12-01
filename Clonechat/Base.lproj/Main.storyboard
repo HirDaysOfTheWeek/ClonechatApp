@@ -121,10 +121,10 @@
             </objects>
             <point key="canvasLocation" x="710" y="-754"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="qlZ-h3-1vt">
             <objects>
-                <viewController id="Me2-vH-0Vp" sceneMemberID="viewController">
+                <viewController id="Me2-vH-0Vp" customClass="LoginViewController" customModule="Clonechat" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="q7B-oY-6Lb"/>
                         <viewControllerLayoutGuide type="bottom" id="Atm-hi-9YS"/>
@@ -145,6 +145,9 @@
                                 <rect key="frame" x="168" y="348" width="38" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="login:" destination="Me2-vH-0Vp" eventType="touchUpInside" id="TEy-Qy-W2v"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ehd-IB-zl9">
                                 <rect key="frame" x="139" y="268" width="97" height="30"/>
@@ -164,6 +167,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="Password" destination="PGi-7h-hQ8" id="Lv5-6T-5ed"/>
+                        <outlet property="Username" destination="Ehd-IB-zl9" id="c1S-Jx-Dwb"/>
+                        <outlet property="loginBtn" destination="pLB-Yg-fIy" id="Uy9-IR-NbL"/>
+                        <outlet property="registerBtn" destination="MJs-40-psl" id="Jws-ND-zR6"/>
                         <segue destination="F0E-II-3nX" kind="show" identifier="loginSuccessful" id="A5c-UA-RkW"/>
                     </connections>
                 </viewController>
