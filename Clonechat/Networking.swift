@@ -18,20 +18,23 @@ class Networking {
 
     class func register(userId : String, email : String, password : String, completionHandler: @escaping (NSDictionary?, NSError?) -> ()) {
         let registerUrl = Networking().url! + "/users/register"
-        let parameters : Parameters = [
-            "username" : userId,
-            "email" : email,
-            "password" : password
-        ]
-        Alamofire.request(registerUrl, method: .post, parameters: parameters).responseJSON { response in
+        Alamofire.upload(multipartFormData: {multipartFormData in
+            multipartFormData.append(userId.data(using: String.Encoding.utf8, allowLossyConversion: false)!, withName : "username")
+            multipartFormData.append(email.data(using: String.Encoding.utf8, allowLossyConversion: false)!, withName : "email")
+            multipartFormData.append(password.data(using: String.Encoding.utf8, allowLossyConversion: false)!, withName : "password")
             
-            switch response.result {
-            case .success(let value):
-                completionHandler(value as? NSDictionary, nil)
-            case .failure(let error):
-                completionHandler(nil, error as NSError?)
-            }
         }
+            , to: registerUrl, encodingCompletion:
+                { encodingResult in
+                switch encodingResult {
+                case .success(let upload, _, _):
+                    upload.responseJSON { response in
+                        debugPrint(response)
+                    }
+                case .failure(let encodingError):
+                    print(encodingError)
+                }
+            })
     }
     
     class func login(userId : String, password : String, completionHandler: @escaping (NSDictionary?, NSError?) -> () ) {
