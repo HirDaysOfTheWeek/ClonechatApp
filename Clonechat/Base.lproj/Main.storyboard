@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Me2-vH-0Vp">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9QC-j1-8Hl">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Register View Controller-->
         <scene sceneID="Vni-Rx-zqV">
             <objects>
-                <viewController id="9QC-j1-8Hl" sceneMemberID="viewController">
+                <viewController id="9QC-j1-8Hl" customClass="RegisterViewController" customModule="Clonechat" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dyo-6q-p3z"/>
                         <viewControllerLayoutGuide type="bottom" id="Df1-22-0l3"/>
@@ -20,15 +20,50 @@
                     <view key="view" contentMode="scaleToFill" id="Llb-eR-Gvt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1cu-n3-Tf6">
+                                <rect key="frame" x="137" y="142" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YDQ-mV-aET">
+                                <rect key="frame" x="151" y="305" width="57" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Register"/>
+                                <connections>
+                                    <action selector="doRegister:" destination="9QC-j1-8Hl" eventType="touchUpInside" id="ygx-ec-Hnr"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="shM-NW-9Hj">
+                                <rect key="frame" x="137" y="180" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6BC-c2-U7b">
+                                <rect key="frame" x="137" y="218" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="emailField" destination="shM-NW-9Hj" id="Lm8-xx-pmH"/>
+                        <outlet property="passwordField" destination="6BC-c2-U7b" id="HcS-wB-sZ5"/>
+                        <outlet property="registerBtn" destination="YDQ-mV-aET" id="SG9-yc-f6H"/>
+                        <outlet property="usernameField" destination="1cu-n3-Tf6" id="Zn9-Z9-pdp"/>
                         <segue destination="F0E-II-3nX" kind="show" identifier="registrationSuccessful" id="CZ0-NN-pgA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rh8-Ei-alc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-102" y="-963"/>
+            <point key="canvasLocation" x="-103.2" y="-963.86806596701661"/>
         </scene>
         <!--Item 2-->
         <scene sceneID="Rt9-0I-inA">
@@ -109,6 +144,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="A5c-UA-RkW"/>
+        <segue reference="CZ0-NN-pgA"/>
     </inferredMetricsTieBreakers>
 </document>

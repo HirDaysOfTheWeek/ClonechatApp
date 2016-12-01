@@ -8,14 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		2EBD73AD1DEFBD1B00F42FFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBD73AC1DEFBD1B00F42FFE /* AppDelegate.swift */; };
-		2EBD73AF1DEFBD1B00F42FFE /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBD73AE1DEFBD1B00F42FFE /* RootViewController.swift */; };
-		2EBD73B11DEFBD1B00F42FFE /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBD73B01DEFBD1B00F42FFE /* DataViewController.swift */; };
-		2EBD73B31DEFBD1B00F42FFE /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBD73B21DEFBD1B00F42FFE /* ModelController.swift */; };
 		2EBD73B61DEFBD1B00F42FFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EBD73B41DEFBD1B00F42FFE /* Main.storyboard */; };
 		2EBD73B81DEFBD1B00F42FFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EBD73B71DEFBD1B00F42FFE /* Assets.xcassets */; };
 		2EBD73BB1DEFBD1B00F42FFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EBD73B91DEFBD1B00F42FFE /* LaunchScreen.storyboard */; };
 		2EBD73C61DEFBD1B00F42FFE /* ClonechatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBD73C51DEFBD1B00F42FFE /* ClonechatTests.swift */; };
 		2EBD73D11DEFBD1B00F42FFE /* ClonechatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBD73D01DEFBD1B00F42FFE /* ClonechatUITests.swift */; };
+		A8C484BB1DEFBFD2001F0566 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C484BA1DEFBFD2001F0566 /* RegisterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,9 +36,6 @@
 /* Begin PBXFileReference section */
 		2EBD73A91DEFBD1B00F42FFE /* Clonechat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clonechat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EBD73AC1DEFBD1B00F42FFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2EBD73AE1DEFBD1B00F42FFE /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
-		2EBD73B01DEFBD1B00F42FFE /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
-		2EBD73B21DEFBD1B00F42FFE /* ModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
 		2EBD73B51DEFBD1B00F42FFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2EBD73B71DEFBD1B00F42FFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2EBD73BA1DEFBD1B00F42FFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +46,7 @@
 		2EBD73CC1DEFBD1B00F42FFE /* ClonechatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClonechatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EBD73D01DEFBD1B00F42FFE /* ClonechatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClonechatUITests.swift; sourceTree = "<group>"; };
 		2EBD73D21DEFBD1B00F42FFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8C484BA1DEFBFD2001F0566 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,13 +98,11 @@
 			isa = PBXGroup;
 			children = (
 				2EBD73AC1DEFBD1B00F42FFE /* AppDelegate.swift */,
-				2EBD73AE1DEFBD1B00F42FFE /* RootViewController.swift */,
-				2EBD73B01DEFBD1B00F42FFE /* DataViewController.swift */,
-				2EBD73B21DEFBD1B00F42FFE /* ModelController.swift */,
 				2EBD73B41DEFBD1B00F42FFE /* Main.storyboard */,
 				2EBD73B71DEFBD1B00F42FFE /* Assets.xcassets */,
 				2EBD73B91DEFBD1B00F42FFE /* LaunchScreen.storyboard */,
 				2EBD73BC1DEFBD1B00F42FFE /* Info.plist */,
+				A8C484BA1DEFBFD2001F0566 /* RegisterViewController.swift */,
 			);
 			path = Clonechat;
 			sourceTree = "<group>";
@@ -265,10 +259,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2EBD73AF1DEFBD1B00F42FFE /* RootViewController.swift in Sources */,
-				2EBD73B31DEFBD1B00F42FFE /* ModelController.swift in Sources */,
-				2EBD73B11DEFBD1B00F42FFE /* DataViewController.swift in Sources */,
 				2EBD73AD1DEFBD1B00F42FFE /* AppDelegate.swift in Sources */,
+				A8C484BB1DEFBFD2001F0566 /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,6 +503,7 @@
 				2EBD73D71DEFBD1B00F42FFE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2EBD73D81DEFBD1B00F42FFE /* Build configuration list for PBXNativeTarget "ClonechatTests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +512,7 @@
 				2EBD73DA1DEFBD1B00F42FFE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2EBD73DB1DEFBD1B00F42FFE /* Build configuration list for PBXNativeTarget "ClonechatUITests" */ = {
 			isa = XCConfigurationList;
@@ -527,6 +521,7 @@
 				2EBD73DD1DEFBD1B00F42FFE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
