@@ -17,7 +17,7 @@ class Networking {
     }
 
     class func register(userId : String, email : String, password : String, completionHandler: @escaping (NSDictionary?, NSError?) -> ()) {
-        let registerUrl = Networking().url! + "/register"
+        let registerUrl = Networking().url! + "/users/register"
         let parameters : Parameters = [
             "username" : userId,
             "email" : email,
@@ -35,7 +35,7 @@ class Networking {
     }
     
     class func login(userId : String, password : String, completionHandler: @escaping (NSDictionary?, NSError?) -> () ) {
-        let loginUrl = Networking().url! + "/login"
+        let loginUrl = Networking().url! + "/users/login"
         let parameters : Parameters = [
             "username" : userId,
             "password" : password
