@@ -29,29 +29,44 @@ class Networking {
                 switch encodingResult {
                 case .success(let upload, _, _):
                     upload.responseJSON { response in
-                        debugPrint(response)
+                        switch response.result {
+                        case .success(let value):
+                            completionHandler(value as? NSDictionary, nil)
+                        case .failure(let error):
+                            completionHandler(nil, error as NSError?)
+                        }
                     }
                 case .failure(let encodingError):
-                    print(encodingError)
+                    completionHandler(nil, encodingError as NSError?)
                 }
             })
     }
     
     class func login(userId : String, password : String, completionHandler: @escaping (NSDictionary?, NSError?) -> () ) {
         let loginUrl = Networking().url! + "/users/login"
-        let parameters : Parameters = [
-            "username" : userId,
-            "password" : password
-        ]
-        Alamofire.request(loginUrl, method: .post, parameters: parameters).responseJSON { response in
+    
+        Alamofire.upload(multipartFormData: {multipartFormData in
+            multipartFormData.append(userId.data(using: String.Encoding.utf8, allowLossyConversion: false)!, withName : "username")
+            multipartFormData.append(password.data(using: String.Encoding.utf8, allowLossyConversion: false)!, withName : "password")
             
-            switch response.result {
-            case .success(let value):
-                completionHandler(value as? NSDictionary, nil)
-            case .failure(let error):
-                completionHandler(nil, error as NSError?)
-            }
         }
+            , to: loginUrl, encodingCompletion:
+            { encodingResult in
+                switch encodingResult {
+                case .success(let upload, _, _):
+                    upload.responseJSON { response in
+                        switch response.result {
+                        case .success(let value):
+                            completionHandler(value as? NSDictionary, nil)
+                        case .failure(let error):
+                            completionHandler(nil, error as NSError?)
+                        }
+                    }
+                case .failure(let encodingError):
+                    completionHandler(nil, encodingError as NSError?)
+                }
+        })
+    
     }
     
    
