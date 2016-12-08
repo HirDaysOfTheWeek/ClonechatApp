@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B9E43959BA7A2ADBF52B7E3 /* Pods_Clonechat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E40D8CDE9E891669ED791D13 /* Pods_Clonechat.framework */; };
+		2E3A80471DFA1BFE00F2263A /* ResponseObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3A80461DFA1BFE00F2263A /* ResponseObjects.swift */; };
 		2EBD73AD1DEFBD1B00F42FFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBD73AC1DEFBD1B00F42FFE /* AppDelegate.swift */; };
-		2EBD73AF1DEFBD1B00F42FFE /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBD73AE1DEFBD1B00F42FFE /* RootViewController.swift */; };
-		2EBD73B11DEFBD1B00F42FFE /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBD73B01DEFBD1B00F42FFE /* DataViewController.swift */; };
-		2EBD73B31DEFBD1B00F42FFE /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBD73B21DEFBD1B00F42FFE /* ModelController.swift */; };
 		2EBD73B61DEFBD1B00F42FFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EBD73B41DEFBD1B00F42FFE /* Main.storyboard */; };
 		2EBD73B81DEFBD1B00F42FFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EBD73B71DEFBD1B00F42FFE /* Assets.xcassets */; };
 		2EBD73BB1DEFBD1B00F42FFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EBD73B91DEFBD1B00F42FFE /* LaunchScreen.storyboard */; };
 		2EBD73C61DEFBD1B00F42FFE /* ClonechatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBD73C51DEFBD1B00F42FFE /* ClonechatTests.swift */; };
 		2EBD73D11DEFBD1B00F42FFE /* ClonechatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBD73D01DEFBD1B00F42FFE /* ClonechatUITests.swift */; };
+		2EBD73DF1DEFC22900F42FFE /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBD73DE1DEFC22900F42FFE /* Networking.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,11 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E3A80461DFA1BFE00F2263A /* ResponseObjects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseObjects.swift; sourceTree = "<group>"; };
 		2EBD73A91DEFBD1B00F42FFE /* Clonechat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clonechat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EBD73AC1DEFBD1B00F42FFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2EBD73AE1DEFBD1B00F42FFE /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
-		2EBD73B01DEFBD1B00F42FFE /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
-		2EBD73B21DEFBD1B00F42FFE /* ModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
 		2EBD73B51DEFBD1B00F42FFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2EBD73B71DEFBD1B00F42FFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2EBD73BA1DEFBD1B00F42FFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +49,10 @@
 		2EBD73CC1DEFBD1B00F42FFE /* ClonechatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClonechatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EBD73D01DEFBD1B00F42FFE /* ClonechatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClonechatUITests.swift; sourceTree = "<group>"; };
 		2EBD73D21DEFBD1B00F42FFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EBD73DE1DEFC22900F42FFE /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		7601722548E13AA31619E4AD /* Pods-Clonechat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clonechat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Clonechat/Pods-Clonechat.debug.xcconfig"; sourceTree = "<group>"; };
+		E40D8CDE9E891669ED791D13 /* Pods_Clonechat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Clonechat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F41B5957EC7B7A3D31AF9E77 /* Pods-Clonechat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clonechat.release.xcconfig"; path = "Pods/Target Support Files/Pods-Clonechat/Pods-Clonechat.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B9E43959BA7A2ADBF52B7E3 /* Pods_Clonechat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +88,8 @@
 				2EBD73C41DEFBD1B00F42FFE /* ClonechatTests */,
 				2EBD73CF1DEFBD1B00F42FFE /* ClonechatUITests */,
 				2EBD73AA1DEFBD1B00F42FFE /* Products */,
+				F6FC686E9BCAD02EF780AB9C /* Pods */,
+				553E683C4F446EBE9E79989C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,14 +106,13 @@
 		2EBD73AB1DEFBD1B00F42FFE /* Clonechat */ = {
 			isa = PBXGroup;
 			children = (
+				2EBD73DE1DEFC22900F42FFE /* Networking.swift */,
 				2EBD73AC1DEFBD1B00F42FFE /* AppDelegate.swift */,
-				2EBD73AE1DEFBD1B00F42FFE /* RootViewController.swift */,
-				2EBD73B01DEFBD1B00F42FFE /* DataViewController.swift */,
-				2EBD73B21DEFBD1B00F42FFE /* ModelController.swift */,
 				2EBD73B41DEFBD1B00F42FFE /* Main.storyboard */,
 				2EBD73B71DEFBD1B00F42FFE /* Assets.xcassets */,
 				2EBD73B91DEFBD1B00F42FFE /* LaunchScreen.storyboard */,
 				2EBD73BC1DEFBD1B00F42FFE /* Info.plist */,
+				2E3A80461DFA1BFE00F2263A /* ResponseObjects.swift */,
 			);
 			path = Clonechat;
 			sourceTree = "<group>";
@@ -131,6 +135,23 @@
 			path = ClonechatUITests;
 			sourceTree = "<group>";
 		};
+		553E683C4F446EBE9E79989C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E40D8CDE9E891669ED791D13 /* Pods_Clonechat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F6FC686E9BCAD02EF780AB9C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7601722548E13AA31619E4AD /* Pods-Clonechat.debug.xcconfig */,
+				F41B5957EC7B7A3D31AF9E77 /* Pods-Clonechat.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,9 +159,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2EBD73D51DEFBD1B00F42FFE /* Build configuration list for PBXNativeTarget "Clonechat" */;
 			buildPhases = (
+				1883FA54C6FF6D20B4F6A2D5 /* [CP] Check Pods Manifest.lock */,
 				2EBD73A51DEFBD1B00F42FFE /* Sources */,
 				2EBD73A61DEFBD1B00F42FFE /* Frameworks */,
 				2EBD73A71DEFBD1B00F42FFE /* Resources */,
+				BDF5DE613A871D60A0C6B441 /* [CP] Embed Pods Frameworks */,
+				A0B1015775BDEC1BC87DFC98 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -260,15 +284,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1883FA54C6FF6D20B4F6A2D5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A0B1015775BDEC1BC87DFC98 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Clonechat/Pods-Clonechat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BDF5DE613A871D60A0C6B441 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Clonechat/Pods-Clonechat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2EBD73A51DEFBD1B00F42FFE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2EBD73AF1DEFBD1B00F42FFE /* RootViewController.swift in Sources */,
-				2EBD73B31DEFBD1B00F42FFE /* ModelController.swift in Sources */,
-				2EBD73B11DEFBD1B00F42FFE /* DataViewController.swift in Sources */,
+				2E3A80471DFA1BFE00F2263A /* ResponseObjects.swift in Sources */,
 				2EBD73AD1DEFBD1B00F42FFE /* AppDelegate.swift in Sources */,
+				2EBD73DF1DEFC22900F42FFE /* Networking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +487,7 @@
 		};
 		2EBD73D61DEFBD1B00F42FFE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7601722548E13AA31619E4AD /* Pods-Clonechat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Clonechat/Info.plist;
@@ -428,6 +500,7 @@
 		};
 		2EBD73D71DEFBD1B00F42FFE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F41B5957EC7B7A3D31AF9E77 /* Pods-Clonechat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Clonechat/Info.plist;
@@ -511,6 +584,7 @@
 				2EBD73D71DEFBD1B00F42FFE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2EBD73D81DEFBD1B00F42FFE /* Build configuration list for PBXNativeTarget "ClonechatTests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +593,7 @@
 				2EBD73DA1DEFBD1B00F42FFE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2EBD73DB1DEFBD1B00F42FFE /* Build configuration list for PBXNativeTarget "ClonechatUITests" */ = {
 			isa = XCConfigurationList;
@@ -527,6 +602,7 @@
 				2EBD73DD1DEFBD1B00F42FFE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
