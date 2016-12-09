@@ -36,12 +36,11 @@ class RegisterViewController: UIViewController {
         Networking.register(userId: username!, email: email!, password: password!, completionHandler: {
             response, error in
             
-            let status:String = response?["status"] as! String
+            let status = (response?.status)!
             if status == "ok" {
                 self.performSegue(withIdentifier: "registrationSuccessful", sender: self)
             } else {
-                let message:String = response?["message"] as! String
-                
+                let message:String = (response?.message)!
             }
         })
     }
