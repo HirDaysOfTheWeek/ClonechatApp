@@ -66,10 +66,70 @@ class Networking {
                     completionHandler(nil, encodingError as NSError?)
                 }
         })
-    
     }
     
-   
+    class func postSnap(image: NSData, username: String, recipient: String, ycoordinate: Double, caption: String, showLength: Int, completionHandler: @escaping(PostSnapResponse?, NSError?) ->()) {
+        
+        let postSnapUrl = Networking().url! + "/snaps/postSnap"
+        
+        Alamofire.upload(multipartFormData: {multipartFormData in
+            multipartFormData.append(username.data(using: String.Encoding.utf8, allowLossyConversion: false)!, withName: "username")
+            multipartFormData.append(recipient.data(using: String.Encoding.utf8, allowLossyConversion: false)!, withName: "recipient")
+            multipartFormData.append(caption.data(using: String.Encoding.utf8, allowLossyConversion: false)!, withName: "caption")
+            var value = ycoordinate
+            let data = withUnsafePointer(to: &value) {
+                Data(bytes: UnsafePointer($0), count: MemoryLayout.size(ofValue: ycoordinate))
+            }
+            multipartFormData.append(data, withName: "ycoordinate")
+            var value2 = showLength
+            let data2 = withUnsafePointer(to: &value2) {
+                Data(bytes: UnsafePointer($0), count: MemoryLayout.size(ofValue: showLength))
+            }
+            multipartFormData.append(data2, withName: "showLength")
+            let imageData = image.subdata(with: NSRange())
+            multipartFormData.append(imageData, withName: "snapPhoto")
+        }
+            ,to: postSnapUrl,
+             encodingCompletion: {encodingResult in
+            switch encodingResult {
+            case .success(let upload, _, _):
+                upload.responseObject { (response: DataResponse<PostSnapResponse>) in
+                switch response.result {
+                case .success(let value):
+                    completionHandler(value as PostSnapResponse, nil)
+                case .failure(let error):
+                    completionHandler(nil, error as NSError?)
+                }
+            }
+            case .failure(let encodingError):
+                completionHandler(nil, encodingError as NSError?)
+            }
+            
+        })
+    }
+    
+    class func getSnapByUserId(username: String, completionHandler: @escaping(RetrieveSnapResponse?, NSError?) ->()) {
+        
+        let getSnapByUserIdUrl = Networking().url! + "/snaps/getSnapsByUserId"
+        Alamofire.upload(multipartFormData: {multipartFormData in
+            multipartFormData.append(username.data(using: String.Encoding.utf8, allowLossyConversion: false)!, withName: "username") }, to: getSnapByUserIdUrl, encodingCompletion: {encodingResult in
+            switch encodingResult {
+            case .success(let upload, _, _):
+                upload.responseObject { (response: DataResponse<RetrieveSnapResponse>) in
+                    switch response.result {
+                    case .success(let value):
+                        completionHandler(value as RetrieveSnapResponse, nil)
+                    case .failure(let error):
+                        completionHandler(nil, error as NSError?)
+                    }
+                }
+            case .failure(let encodingError):
+                completionHandler(nil, encodingError as NSError?)
+            }
+            
+        })
+        
+    }
     
     
 }
